@@ -1,1 +1,29 @@
 12:27 - 11_09_16 (Test, to push to github)
+-Used Https to connect to github.
+Issue 1: Workflow slowdown due to extra authentication steps.
+
+[
+git init
+git add .
+git commit -m [custom message]
+git remote add origin [https of repository (git remote add origin https://github.com/erespinuevajr/git-start.git) ]
+
+*** input user name and password of github account before every push to the repository
+
+git push -u origin master
+]
+
+12:55 - 11_09_16 (Test 2, to push to github)
+-Used SSH to connect to github.
+Resolved issue 1: Applied Cloud9 SSH key to list of SSH and GPG keys on Github.
+
+invoked : "git remote set-url origin git@github.com:erespinuevajr/git-start.git"
+however no feedback was given on commandline.
+
+now use:
+[
+git init
+git add .
+git commit -m [custom message]
+git push -u origin master
+]
